@@ -12,7 +12,7 @@ type SplitHeroSectionProps = {
   mediaTitle: string;
   mediaSrc?: string;
   mediaPosterSrc?: string;
-  mediaCaption?: string;
+  mediaCaption?: ReactNode;
 };
 
 export default function SplitHeroSection({

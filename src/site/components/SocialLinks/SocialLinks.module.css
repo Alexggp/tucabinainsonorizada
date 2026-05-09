@@ -18,3 +18,14 @@
 .SocialLinks a:hover {
   color: var(--color-primary);
 }
+
+@media (max-width: 900px) {
+  .SocialLinks {
+    gap: 0.65rem;
+  }
+
+  .SocialLinks a,
+  .SocialLinks span {
+    font-size: clamp(1.55rem, 7vw, 2rem);
+  }
+}

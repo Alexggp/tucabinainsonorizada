@@ -33,8 +33,14 @@ export default function MainPage({ locale }: MainPageProps) {
           </>
         }
         mediaTitle="Video"
-        mediaSrc="https://www.youtube.com/embed/bv0KKVjbYiA"
-        mediaCaption="+34679792719"
+        mediaSrc="https://www.youtube.com/embed/jO17KYjZ56c"
+        mediaCaption={
+          <>
+            +34679792719
+            <br />
+            <span className={classes.HeroEmail}>diego@tucabinainsonorizada.com</span>
+          </>
+        }
       />
       <MultiColumnSection
         variant="outlined"
