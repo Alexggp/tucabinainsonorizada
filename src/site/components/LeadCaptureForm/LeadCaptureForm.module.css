@@ -1,0 +1,29 @@
+.LeadCaptureForm {
+  width: min(100%, 480px);
+  padding: 0;
+  text-align: center;
+  justify-self: center;
+}
+
+.LeadCaptureForm h2 {
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+}
+
+.Eyebrow {
+  margin-bottom: 0.4rem;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.Description {
+  margin-bottom: 1.2rem;
+  font-weight: 500;
+}
+
+@media (max-width: 900px) {
+  .LeadCaptureForm {
+    width: min(100%, 320px);
+  }
+}

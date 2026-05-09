@@ -1,0 +1,25 @@
+.ModularContainer {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  transition: flex-basis 0.3s ease;
+}
+
+.Collapsed {
+  flex-basis: 35px !important;
+}
+
+.Content,
+.CollapsedContent {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+.CollapsedBar {
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

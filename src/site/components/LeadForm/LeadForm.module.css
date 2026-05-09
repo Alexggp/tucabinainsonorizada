@@ -1,0 +1,87 @@
+.LeadForm {
+  display: grid;
+  gap: 0.7rem;
+}
+
+.Fields {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.Fields input {
+  min-width: 0;
+  width: min(16rem, 100%);
+  border: 1px solid color-mix(in srgb, var(--color-black) 28%, transparent);
+  border-radius: var(--radius-sm);
+  padding: 0.9rem 1.1rem;
+  background: #fff;
+  text-align: center;
+}
+
+.DownloadButton {
+  border: none;
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+  cursor: pointer;
+  font-weight: 700;
+  padding: 0.95rem 1.35rem;
+  border-radius: var(--radius-sm);
+  min-width: 9.5rem;
+  transition: background-color 160ms ease, color 160ms ease;
+}
+
+.DownloadButton:hover {
+  background-color: var(--color-primary);
+}
+
+.FieldError {
+  border-color: var(--color-error) !important;
+}
+
+.Terms {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  color: var(--color-text-primary);
+  font-size: 0.82rem;
+  font-weight: 500;
+  line-height: 1.35;
+  text-align: left;
+}
+
+.Terms input {
+  width: 1rem;
+  height: 1rem;
+  accent-color: var(--color-accent-secondary);
+  flex: 0 0 auto;
+}
+
+.Terms a {
+  color: var(--color-accent-primary);
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.TermsError {
+  color: var(--color-error);
+}
+
+@media (max-width: 900px) {
+  .LeadForm {
+    justify-items: center;
+    width: 100%;
+  }
+
+  .Fields {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .Fields input,
+  .DownloadButton {
+    width: 100%;
+  }
+}

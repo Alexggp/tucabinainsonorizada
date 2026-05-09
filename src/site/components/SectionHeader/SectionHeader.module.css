@@ -1,0 +1,11 @@
+.SectionHeader {
+  max-width: 920px;
+  margin: 0 auto 2.5rem;
+  display: grid;
+  gap: 0.75rem;
+  text-align: center;
+}
+
+.Compact {
+  margin-top: 4rem;
+}

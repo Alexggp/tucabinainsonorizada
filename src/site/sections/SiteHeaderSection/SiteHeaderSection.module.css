@@ -1,0 +1,52 @@
+.SiteHeaderSection {
+  min-height: 86px;
+  padding: 1.25rem 2.5rem;
+  background: var(--color-white);
+  border-bottom: 2px solid var(--color-primary);
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+}
+
+.Domain {
+  grid-column: 2;
+  font-size: clamp(1.05rem, 1.8vw, 1.45rem);
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.Social {
+  justify-self: end;
+}
+
+.Nav {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  font-size: 1rem;
+}
+
+@media (max-width: 900px) {
+  .SiteHeaderSection {
+    min-height: 72px;
+    padding: 1rem;
+    grid-template-columns: 1fr;
+    gap: 0.85rem;
+  }
+
+  .Domain {
+    grid-column: auto;
+    justify-self: center;
+  }
+
+  .Social {
+    justify-self: center;
+  }
+
+  .Nav {
+    gap: 0.75rem;
+    font-size: 0.95rem;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+}

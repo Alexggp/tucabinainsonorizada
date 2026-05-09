@@ -1,0 +1,43 @@
+.ModalContent {
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+}
+
+.LogoContainer {
+  width: 10rem;
+  height: 10rem;
+  position: relative;
+}
+
+.Highlight {
+  color: var(--color-primary);
+}
+
+.Italic {
+  font-style: italic;
+}
+
+.CloseButton {
+  border: none;
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+  cursor: pointer;
+  font-weight: 700;
+  padding: 0.85rem 1.15rem;
+}
+
+.CloseButton:hover {
+  background-color: var(--color-primary);
+}
+
+@media (max-width: 1024px) {
+  .LogoContainer {
+    width: 30rem;
+    height: 30rem;
+  }
+}

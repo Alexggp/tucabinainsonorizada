@@ -1,0 +1,68 @@
+.CenteredContentSection {
+  padding: clamp(2.5rem, 5vw, 5rem) 2rem;
+  display: flex;
+  justify-content: center;
+  background: var(--color-white);
+}
+
+.Content {
+  width: 100%;
+  display: grid;
+  gap: 7rem;
+  justify-items: center;
+  text-align: center;
+}
+
+.Eyebrow {
+  color: var(--color-accent-primary);
+  font-size: clamp(2.6rem, 5vw, 3.8rem);
+  line-height: 1.05;
+  font-weight: 700;
+}
+
+.TitleLines {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(2.5rem, 10vw, 8rem);
+  align-items: end;
+  margin-bottom: 1.5rem;
+}
+
+.TitleLines h2 {
+  margin: 0;
+  font-size: clamp(2.6rem, 5vw, 3.8rem);
+  line-height: 1.05;
+  font-weight: 700;
+}
+
+.Body {
+  display: grid;
+  gap: 0.5rem;
+  font-weight: 500;
+}
+
+.Body h2 {
+  margin: 0;
+  font-size: clamp(2rem, 3vw, 3rem);
+  line-height: 1.15;
+  font-weight: 300;
+}
+
+@media (max-width: 900px) {
+  .CenteredContentSection {
+    padding: 3rem 1rem;
+  }
+
+  .Content {
+    gap: 4rem;
+  }
+
+  .TitleLines {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 1rem;
+    width: 100%;
+    margin-bottom: 0;
+    text-align: center;
+  }
+}

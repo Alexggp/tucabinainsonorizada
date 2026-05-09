@@ -1,0 +1,24 @@
+.ModularLayout {
+  display: flex;
+  width: 100%;
+  max-height: 100%;
+  min-height: 100%;
+  position: relative;
+  flex: 1;
+}
+
+.Horizontal {
+  flex-direction: row;
+}
+
+.Vertical {
+  flex-direction: column;
+}
+
+@media (max-width: 1024px) {
+  .ModularLayout {
+    max-height: none;
+    min-height: auto;
+    height: auto;
+  }
+}

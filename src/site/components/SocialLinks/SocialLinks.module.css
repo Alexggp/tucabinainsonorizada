@@ -1,0 +1,20 @@
+.SocialLinks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.85rem;
+}
+
+.SocialLinks a,
+.SocialLinks span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-black);
+  font-size: clamp(1.85rem, 3vw, 2.35rem);
+  line-height: 1;
+}
+
+.SocialLinks a:hover {
+  color: var(--color-primary);
+}

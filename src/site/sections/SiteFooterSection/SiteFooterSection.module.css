@@ -1,0 +1,16 @@
+.SiteFooterSection {
+  min-height: 112px;
+  padding: 2rem 1.5rem;
+  background: var(--color-accent-primary);
+  color: var(--color-white);
+  border-top: 1px solid color-mix(in srgb, var(--color-black) 15%, transparent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.SiteFooterSection a,
+.SiteFooterSection span,
+.SiteFooterSection a:hover {
+  color: var(--color-white) !important;
+}
