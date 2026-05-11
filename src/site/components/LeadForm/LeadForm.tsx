@@ -105,7 +105,7 @@ export default function LeadForm() {
       <Modal
         show={showModal}
         setShow={setShowModal}
-        width="auto"
+        width="50vw"
         height="60vh"
         square
       >

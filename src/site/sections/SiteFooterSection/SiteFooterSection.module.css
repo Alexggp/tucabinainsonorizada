@@ -4,13 +4,23 @@
   background: var(--color-accent-primary);
   color: var(--color-white);
   border-top: 1px solid color-mix(in srgb, var(--color-black) 15%, transparent);
-  display: flex;
+  display: grid;
+  gap: 1rem;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 .SiteFooterSection a,
 .SiteFooterSection span,
 .SiteFooterSection a:hover {
   color: var(--color-white) !important;
+}
+
+.Contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem 1.5rem;
+  font-weight: 700;
 }

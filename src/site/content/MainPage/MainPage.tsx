@@ -15,14 +15,17 @@ export default function MainPage({ locale }: MainPageProps) {
     <main className={classes.MainPage} data-locale={locale}>
       <SiteHeaderSection />
       <SplitHeroSection
-        title="Adapta tus oficinas a las necesidades de hoy"
+        title={
+          <>
+            Vas a invertir en cabinas <strong>insonorizadas.</strong>
+            <br />
+            No elijas mal.
+          </>
+        }
         intro={
           <>
             <p>
-              Vas a invertir en <strong>cabinas insonorizadas.</strong>
-            </p>
-            <p>
-              <b>No elijas mal.</b>
+              Adapta tus oficinas a las necesidades de <strong>hoy.</strong>
             </p>
           </>
         }
@@ -33,7 +36,7 @@ export default function MainPage({ locale }: MainPageProps) {
           </>
         }
         mediaTitle="Video"
-        mediaSrc="https://www.youtube.com/embed/jO17KYjZ56c"
+        mediaSrc="https://www.youtube.com/embed/WDJ8unpIKDA"
         mediaCaption={
           <>
             +34679792719
@@ -98,13 +101,22 @@ export default function MainPage({ locale }: MainPageProps) {
         ]}
       />
       <MultiColumnSection
+        title={
+          <>
+            Te cuento como tener tus cabinas en <strong>8 pasos</strong>
+          </>
+        }
         variant="filled"
         columns={4}
         items={[
-          { label: "1", title: "Nos cuentas tu caso" },
-          { label: "2", title: "Propuesta adaptada a presupuesto" },
-          { label: "3", title: "Entrega y montaje" },
-          { label: "4", title: "Atención post-venta" }
+          { label: "1", title: "Nos dejas email" },
+          { label: "2", title: "Nos ponemos en contacto en menos de 24" },
+          { label: "3", title: "Reunión de 25 min para que nos cuentes tu historia" },
+          { label: "4", title: "Presentación propuesta adaptada a presupuesto" },
+          { label: "5", title: "Aceptas el presupuesto pagando la reserva" },
+          { label: "6", title: "Envío y montaje" },
+          { label: "7", title: "Disfrutas de tus nuevas cabinas" },
+          { label: "8", title: "Atención personalizada Post-venta" }
         ]}
       />
       <CenteredContentSection titleLines={["Ahorras tiempo", "No te equivocas"]} showLeadForm />

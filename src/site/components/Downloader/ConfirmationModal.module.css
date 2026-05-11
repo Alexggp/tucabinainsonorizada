@@ -1,21 +1,17 @@
 .ModalContent {
-  padding: 4rem;
+  padding: clamp(2rem, 4vw, 4rem);
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   height: 100%;
   text-align: center;
+  gap: 1.5rem;
 }
 
-.LogoContainer {
-  width: 10rem;
-  height: 10rem;
-  position: relative;
-}
-
-.Highlight {
-  color: var(--color-primary);
+.ModalContent p {
+  line-height: 1.8;
+  margin: 0;
 }
 
 .Italic {
@@ -33,11 +29,4 @@
 
 .CloseButton:hover {
   background-color: var(--color-primary);
-}
-
-@media (max-width: 1024px) {
-  .LogoContainer {
-    width: 30rem;
-    height: 30rem;
-  }
 }

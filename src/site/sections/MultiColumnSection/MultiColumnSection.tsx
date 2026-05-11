@@ -11,7 +11,7 @@ type MultiColumnItem = {
 };
 
 type MultiColumnSectionProps = {
-  title?: string;
+  title?: ReactNode;
   eyebrow?: string;
   items: MultiColumnItem[];
   columns?: 2 | 3 | 4;

@@ -5,7 +5,7 @@ import classes from "./SplitHeroSection.module.css";
 
 type SplitHeroSectionProps = {
   eyebrow?: string;
-  title: string;
+  title: ReactNode;
   intro: ReactNode;
   bullets?: string[];
   note?: ReactNode;

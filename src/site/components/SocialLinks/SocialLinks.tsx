@@ -1,10 +1,10 @@
-import { FaInstagram, FaLinkedin, FaWhatsapp, FaYoutube } from "react-icons/fa6";
+import { FaWhatsapp, FaYoutube } from "react-icons/fa6";
 import classes from "./SocialLinks.module.css";
 
 type SocialLink = {
   href?: string;
   label: string;
-  icon: "youtube" | "whatsapp" | "linkedin" | "instagram";
+  icon: "youtube" | "whatsapp";
 };
 
 type SocialLinksProps = {
@@ -13,7 +13,7 @@ type SocialLinksProps = {
 
 const defaultLinks: SocialLink[] = [
   {
-    href: "https://www.youtube.com/watch?v=dTGG71fhSNk",
+    href: "https://www.youtube.com/watch?v=WDJ8unpIKDA",
     label: "YouTube",
     icon: "youtube"
   },
@@ -21,22 +21,12 @@ const defaultLinks: SocialLink[] = [
     href: "https://wa.me/34679792719",
     label: "WhatsApp",
     icon: "whatsapp"
-  },
-  {
-    label: "LinkedIn",
-    icon: "linkedin"
-  },
-  {
-    label: "Instagram",
-    icon: "instagram"
   }
 ];
 
 const icons = {
   youtube: FaYoutube,
-  whatsapp: FaWhatsapp,
-  linkedin: FaLinkedin,
-  instagram: FaInstagram
+  whatsapp: FaWhatsapp
 };
 
 export default function SocialLinks({ links = defaultLinks }: SocialLinksProps) {

@@ -16,9 +16,9 @@
   border-radius: 4px !important;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 700px) {
   .boxClass {
-    width: 100vw !important;
+    width: calc(100vw - 2rem) !important;
     border-radius: 0 !important;
     border: none !important;
     box-shadow: none !important;

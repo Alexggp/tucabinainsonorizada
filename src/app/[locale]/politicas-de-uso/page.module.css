@@ -9,7 +9,7 @@
   width: min(880px, 100%);
   margin: 0 auto;
   display: grid;
-  gap: 1.35rem;
+  gap: 1.6rem;
 }
 
 .BackLink {
@@ -31,4 +31,31 @@
 .Content p {
   margin: 0;
   font-weight: 500;
+}
+
+.SiteUrl {
+  color: var(--color-accent-primary);
+  font-weight: 800 !important;
+}
+
+.Section {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.Content ul {
+  display: grid;
+  gap: 0.55rem;
+  margin: 0;
+  padding-left: 1.35rem;
+  font-weight: 500;
+}
+
+.Content li {
+  line-height: 1.55;
+}
+
+.Content a {
+  color: var(--color-accent-primary);
+  font-weight: 800;
 }
