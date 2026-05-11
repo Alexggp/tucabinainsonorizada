@@ -17,15 +17,15 @@ export default function MainPage({ locale }: MainPageProps) {
       <SplitHeroSection
         title={
           <>
-            Vas a invertir en cabinas <strong>insonorizadas.</strong>
+            Vas a invertir en cabinas <strong>insonorizadas</strong>
             <br />
-            No elijas mal.
+            No elijas mal
           </>
         }
         intro={
           <>
             <p>
-              Adapta tus oficinas a las necesidades de <strong>hoy.</strong>
+              Adapta tus oficinas a las necesidades de <strong>hoy</strong>
             </p>
           </>
         }
@@ -122,16 +122,16 @@ export default function MainPage({ locale }: MainPageProps) {
       <CenteredContentSection titleLines={["Ahorras tiempo", "No te equivocas"]} showLeadForm />
       <CenteredContentSection eyebrow="Silencio real para oficinas reales" showLeadForm>
         <h2>
-          Las quieres por <strong>falta de espacio.</strong>
+          Las quieres por <strong>falta de espacio</strong>
         </h2>
         <h2>
-          Disfrutarás <strong>trabajar sin ruido.</strong>
+          Disfrutarás <strong>trabajar sin ruido</strong>
         </h2>
         <h2>
-          Te dará confianza <strong>recuperar la privacidad.</strong>
+          Te dará confianza <strong>recuperar la privacidad</strong>
         </h2>
         <h2>
-          Te enamorarás de <strong>poder concentrarte.</strong>
+          Te enamorarás de <strong>poder concentrarte</strong>
         </h2>
       </CenteredContentSection>
       <SiteFooterSection />
